@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>168nf7ci16dnh</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1708</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>home</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="945611927021627">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="metal" sid="827070299749257" type="number" />
+                <instance-variable name="vidro" sid="497963944028231" type="number" />
+                <instance-variable name="papel" sid="534781582349830" type="number" />
+                <instance-variable name="plastico" sid="648762308639373" type="number" />
+            </instance-variables>
+            <texture original-source="C:\Users\SUPERGEEKSCG\Documents\Raquel\_Assets\grama.png" />
+        </object-type>
+        <object-type name="Sprite" sid="828700574209922">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="944269731101047">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="689646539260508" speed="5">
+                    <frame duration="1" hotspotX="0.524138" hotspotY="1.15801" original-source="C:\Users\SUPERGEEKSCG\Documents\Raquel\_Assets\arbusto.png">
+                        <collision-poly>
+                            <point x="0.156322" y="0.306998" />
+                            <point x="0.522988" y="0.117381" />
+                            <point x="0.87931" y="0.329571" />
+                            <point x="0.394253" y="1" />
+                            <point x="0.643678" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="356151490534239">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169333310970043" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SUPERGEEKSCG\Documents\Raquel\_Assets\arvore.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="416348942796979">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="490129615593217">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="951286108780866">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="620202721999705">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477042885958231" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.304348" original-source="C:\Users\SUPERGEEKSCG\Documents\Raquel\_Assets\personagem\small_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SUPERGEEKSCG\Documents\Raquel\_Assets\personagem\small_12.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="610282925399289">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="292897028670030">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346025875090133" speed="5">
+                    <frame duration="1" hotspotX="0.502994" hotspotY="0.502392" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\images.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="512059815334181">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="815166848813911">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127629521703421" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502392" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\metal.png">
+                        <collision-poly>
+                            <point x="0.0662651" y="0.0526316" />
+                            <point x="0.5" y="0.00478469" />
+                            <point x="0.927711" y="0.0574163" />
+                            <point x="0.903614" y="0.497608" />
+                            <point x="0.825301" y="0.861244" />
+                            <point x="0.5" y="0.995215" />
+                            <point x="0.162651" y="0.870813" />
+                            <point x="0.0903614" y="0.497608" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="668031597903228">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="828449731356792">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="427127408496179" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\papel.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="464654660810971">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="777597194564789">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="562814818299834" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.5" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\Vidro.png">
+                        <collision-poly>
+                            <point x="0.0606061" y="0.0480769" />
+                            <point x="0.49697" y="0" />
+                            <point x="0.939394" y="0.0480769" />
+                            <point x="0.909091" y="0.5" />
+                            <point x="0.836364" y="0.870192" />
+                            <point x="0.49697" y="0.995192" />
+                            <point x="0.169697" y="0.865385" />
+                            <point x="0.0969697" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lata" sid="715062316340858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835513084491901" speed="5">
+                    <frame duration="1" hotspotX="0.896" hotspotY="0.513393" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\lata.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Metal" sid="808818137687400">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="543216307850691">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Plastico" sid="705195547613683">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="340408366879567">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Papel" sid="369011808046544">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="266005128167564">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Vidro" sid="940264206835551">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="885413774085014">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="pap" sid="125254965061420">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="863791735766964">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298181116986124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\jornal.png">
+                        <collision-poly>
+                            <point x="0.307" y="0.307" />
+                            <point x="0.5" y="0.19" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.956" y="0.5" />
+                            <point x="0.706" y="0.706" />
+                            <point x="0.5" y="0.984" />
+                            <point x="0.229" y="0.771" />
+                            <point x="0.124" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plas" sid="661635675763000">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="331621489877807">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417086489042712" speed="5">
+                    <frame duration="1" hotspotX="0.965732" hotspotY="0.520173" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\plastico.png">
+                        <collision-poly>
+                            <point x="0.376947" y="0.174352" />
+                            <point x="0.965732" y="0.314121" />
+                            <point x="0.987539" y="0.436599" />
+                            <point x="0.993769" y="0.606628" />
+                            <point x="0.965732" y="0.923631" />
+                            <point x="0.0809969" y="1" />
+                            <point x="0.333333" y="0.520173" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vid" sid="175920445585108">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="738746293134137">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298894130332055" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Raquel\Downloads\Jogo\_Assets\Vidro.png">
+                        <collision-poly>
+                            <point x="0.282" y="0.282" />
+                            <point x="0.5" y="0.154" />
+                            <point x="0.723" y="0.277" />
+                            <point x="0.784" y="0.5" />
+                            <point x="0.666" y="0.666" />
+                            <point x="0.5" y="0.984" />
+                            <point x="0.334" y="0.666" />
+                            <point x="0.217" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="759675610326881">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981029150714136" speed="5">
+                    <frame duration="1" hotspotX="0.575221" hotspotY="0.587786" original-source="C:\Users\Raquel\Downloads\generatedtext.png">
+                        <collision-poly>
+                            <point x="0.0117994" y="0.00763359" />
+                            <point x="0.575221" y="0.48855" />
+                            <point x="0.926254" y="0.557252" />
+                            <point x="0.943953" y="0.587786" />
+                            <point x="0.920354" y="0.603053" />
+                            <point x="0.575221" y="1" />
+                            <point x="0.221239" y="0.625954" />
+                            <point x="0.079646" y="0.587786" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="477094329325855">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Raquel\Downloads\minecraft.jpg" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="278739385817492">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Raquel\Downloads\botao_start.png" />
+        </object-type>
+        <object-type name="Touch" sid="715569274675420">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="315533955783125">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Raquel\Downloads\blog-game-over.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="440813066212551">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Raquel\Downloads\youwon1.gif" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>level0.xml</layout>
+        <layout>home.xml</layout>
+        <layout>game over.xml</layout>
+        <layout>Win.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="93">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

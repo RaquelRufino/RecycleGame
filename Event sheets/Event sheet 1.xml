@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="tempo" sid="668394536554156" static="0" type="number">0</variable>
+        <variable constant="0" name="resta_metal" sid="400344402790625" static="0" type="number">0</variable>
+        <variable constant="0" name="metal" sid="209038372085202" static="0" type="number">0</variable>
+        <variable constant="0" name="resta_papel" sid="523011435088803" static="0" type="number">0</variable>
+        <variable constant="0" name="papel" sid="145858241787059" static="0" type="number">0</variable>
+        <variable constant="0" name="resta_plastico" sid="234625341281362" static="0" type="number">0</variable>
+        <variable constant="0" name="plastico" sid="911688476739102" static="0" type="number">0</variable>
+        <variable constant="0" name="resta_vidro" sid="816046163522134" static="0" type="number">0</variable>
+        <variable constant="0" name="vidro" sid="885884803346551" static="0" type="number">0</variable>
+        <event-block sid="334075900925936">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="120187379969867" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="175326436239985" type="System">
+                    <param id="0" name="Variable">metal</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="210922119412338" type="System">
+                    <param id="0" name="Variable">resta_metal</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="468300131375957" type="System">
+                    <param id="0" name="Variable">papel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="257065239082929" type="System">
+                    <param id="0" name="Variable">resta_papel</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="412244689287286" type="System">
+                    <param id="0" name="Variable">vidro</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="593218799995922" type="System">
+                    <param id="0" name="Variable">resta_vidro</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="620856391019489" type="System">
+                    <param id="0" name="Variable">plastico</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="468163297876160" type="System">
+                    <param id="0" name="Variable">resta_plastico</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="931206841389714" type="System">
+                    <param id="0" name="Variable">tempo</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="314800915172494">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="615693141239598" type="Sprite3">
+                    <param id="0" name="Object">lata</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="946173690130686" type="System">
+                    <param id="0" name="Variable">metal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="934771210481357" type="lata" />
+            </actions>
+        </event-block>
+        <event-block sid="633062123399004">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="683929651129863" type="Sprite3">
+                    <param id="0" name="Object">plas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="256264873055408" type="System">
+                    <param id="0" name="Variable">plastico</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="869990077342259" type="plas" />
+            </actions>
+        </event-block>
+        <event-block sid="416102008450850">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="559151774077237" type="Sprite3">
+                    <param id="0" name="Object">vid</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="473535068511312" type="System">
+                    <param id="0" name="Variable">vidro</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="676223684823009" type="vid" />
+            </actions>
+        </event-block>
+        <event-block sid="833315510040758">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="786666593454099" type="Sprite3">
+                    <param id="0" name="Object">pap</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="612341691674882" type="System">
+                    <param id="0" name="Variable">papel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="497078989852410" type="pap" />
+            </actions>
+        </event-block>
+        <event-block sid="115294900209284">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="406941194027067" type="Sprite3">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="598587250379196" type="System">
+                    <param id="0" name="First value">metal</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="109076677695362" type="System">
+                    <param id="0" name="Variable">resta_metal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="700117390596647" type="System">
+                    <param id="0" name="Variable">metal</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="798827864769280">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="351344255475622" type="Sprite3">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="547238162678766" type="System">
+                    <param id="0" name="First value">plastico</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="697112386296401" type="System">
+                    <param id="0" name="Variable">resta_plastico</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="605848185631327" type="System">
+                    <param id="0" name="Variable">plastico</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="904357934283252">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="357148089019500" type="Sprite3">
+                    <param id="0" name="Object">Sprite7</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="151351017055309" type="System">
+                    <param id="0" name="First value">vidro</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="605580483555636" type="System">
+                    <param id="0" name="Variable">resta_vidro</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="677434039108760" type="System">
+                    <param id="0" name="Variable">vidro</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="751682261073956">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="221523917087008" type="Sprite3">
+                    <param id="0" name="Object">Sprite6</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="379203344071268" type="System">
+                    <param id="0" name="First value">papel</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="977953001589320" type="System">
+                    <param id="0" name="Variable">resta_papel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="431442514053630" type="System">
+                    <param id="0" name="Variable">papel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="520716185504017">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="872123328925979" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="620046767965613" type="Metal">
+                    <param id="0" name="Text">&quot;Metal  &quot;  &amp;resta_metal</param>
+                </action>
+                <action id="0" name="Set text" sid="955031797836347" type="Papel">
+                    <param id="0" name="Text">&quot;Papel  &quot;  &amp;resta_papel</param>
+                </action>
+                <action id="0" name="Set text" sid="826938012786851" type="Plastico">
+                    <param id="0" name="Text">&quot;Plástico  &quot;  &amp;resta_plastico</param>
+                </action>
+                <action id="0" name="Set text" sid="959620127158816" type="Vidro">
+                    <param id="0" name="Text">&quot;Vidro  &quot;  &amp;resta_vidro</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="833551695772502" type="System">
+                    <param id="0" name="Variable">tempo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="451821511064378">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="487004864651809" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="319875070021653" type="System">
+                    <param id="0" name="Variable">tempo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="460507966408429" type="System">
+                    <param id="0" name="Variable">resta_metal</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="812702413725270" type="System">
+                    <param id="0" name="Variable">resta_papel</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="385672501237811" type="System">
+                    <param id="0" name="Variable">resta_plastico</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="514423951845286" type="System">
+                    <param id="0" name="Variable">resta_vidro</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="751803020282789" type="System">
+                    <param id="0" name="Layout">game over</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="854663356844946">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="932918396829700" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="422986100884322" type="System">
+                    <param id="0" name="Variable">resta_metal</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="612061672347238" type="System">
+                    <param id="0" name="Variable">resta_papel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="227880760387541" type="System">
+                    <param id="0" name="Variable">resta_plastico</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="206313213846889" type="System">
+                    <param id="0" name="Variable">resta_vidro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="177142239620168" type="System">
+                    <param id="0" name="Layout">Win</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
